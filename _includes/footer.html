@@ -1,0 +1,14 @@
+<footer id="footer" class="site-footer">
+  <div class="inner">
+    <div class="copyright">
+      {% if site.copyright %}
+        {{ site.copyright | markdownify }}
+      {% else %}
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
+      {% endif %}
+    </div>
+  </div>
+  <div class="copyright-r">
+       <p>Proudly hosted by Github and powered by Jekyll.</p>
+  </div>
+</footer>
